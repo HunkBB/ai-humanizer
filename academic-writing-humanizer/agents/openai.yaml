@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Writing Humanizer"
+  short_description: "Ground research writing in your evidence and voice"
+  default_prompt: "Use $academic-writing-humanizer to revise my research proposal using my CV, sources, and writing samples, and explain substantive changes."
