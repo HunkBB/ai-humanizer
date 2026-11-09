@@ -2,9 +2,11 @@
 
 ## Choose the editing depth
 
-Use a paragraph rewrite for a request to humanize a draft or repair formulaic prose. Use copyediting for a requested light polish. Neither mode authorizes a new project, invented personal motivation, or stronger claims. Without genuine author samples, aim for clear, restrained academic English and report voice as uncalibrated. Do not manufacture an ethnic, non-native, or proficiency stereotype.
+Set the genre, reader expertise and preference record before composing or revising. Formal academic prose defaults to analytical, precise and restrained; outreach email permits professional direct address. A research-interest note needs an explicit genre choice, not an assumption that addressing a professor makes the body conversational. Without genuine author samples, report voice as uncalibrated even when the user has confirmed a target register.
 
-Read the complete coverage reference once per full review; apply the appropriate scope to each row. Its source is a changing community observation page, not a model specification or evidence that a particular phrase proves AI authorship. Do not treat a historical entry as a current diagnostic. The procedures below are our editorial choices for academic documents.
+Rewrite paragraphs with a demonstrated argument, formulaic-structure or register problem. Use copyediting for a requested light polish, and retain effective passages even in a substantial humanizing task. Neither mode authorizes a new project, invented personal motivation, or stronger claims. Do not manufacture an ethnic, non-native, or proficiency stereotype.
+
+Read the complete coverage reference once per full review; apply the appropriate scope to each row. Its source is a changing community observation page, not a model specification or evidence that a particular phrase proves AI authorship. Protect meaning and explicit task requirements first, then apply confirmed user preferences and genre conventions before general style suggestions. Do not treat a historical entry as a current diagnostic or delete a useful academic construction to satisfy a keyword cue.
 
 ## 1. Protect meaning before editing
 
@@ -14,9 +16,9 @@ Record short propositions rather than copying every sentence: who did what; popu
 
 Ask what the reader needs to understand next. For outreach, lead with the research question and why it is worth discussing; for a formal proposal, obey its required structure. Connect background to a specific research task instead of reciting the CV and declaring excellent fit. Describe the professor's relevant result and its consequence for this question instead of describing the professor's prestige or website.
 
-Draft each weak paragraph from its necessary propositions. Use a concrete subject and action early. Put evidence next to the claim it supports. End when the paragraph has done its job. A final sentence that merely announces significance usually adds nothing. Do not force all paragraphs into claim–three examples–summary, or turn every section into a miniature introduction and conclusion.
+Draft each weak paragraph from its necessary propositions and analytical function. Make the subject and relationship clear; subjects can be the research question, evidence, measure or limitation. Connect the relevant claim, evidence, interpretation and qualification without imposing a fixed order on every paragraph. Put evidence next to the claim it supports. Preserve enough development for the inference to be understood. End when the paragraph has done its job; do not add a generic importance sentence or require a rhetorical question, three examples or summary.
 
-Keep a real decision visible: what will be compared, why the comparison answers the question, what could make it fail, and what the author proposes doing next. Use first person for a proposed choice when the genre permits it. Do not invent autobiographical explanations for that choice.
+Keep actual design choices and their rationale visible. In formal methods, use the study, population, measure or analysis as the subject where helpful, rather than narrating successive personal actions. Retain first person when it conveys a real choice, responsibility or motivation; do not convert it mechanically to passive voice. For literature paragraphs, explain how a specific finding motivates or limits the proposed question. Replace conversational staging only when it adds no analytical relation. Do not invent autobiographical explanations.
 
 ## 3. Remove claims that have no work to do
 
@@ -26,17 +28,30 @@ For a vague relationship, state the role, link or mechanism if supported. “Ass
 
 Delete generic praise, ceremonial promises of contribution, prestige inventories, and unneeded awards. Retain an achievement if relevant, verified and proportionate. Rewrite a generic “challenges and future directions” ending around the actual unresolved decision or requested conversation.
 
-## 4. Make sentences easier to follow
+## 4. Match diction and syntax to the academic register
 
-Prefer the ordinary verb that expresses the action. “Is,” “has,” “uses” and “compares” often do the job. Expand a noun chain into who acts on what. Replace decorative vocabulary only when it obscures meaning or inflates the claim. Do not make “significant,” “robust,” “framework,” or any other legitimate technical term a prohibited word.
+Prefer the most precise, established expression for the discipline and reader. Ordinary verbs such as “is,” “uses” and “compares” are appropriate when accurate; “estimate,” “assess” and “distinguish” are appropriate when they express the operation more exactly. Do not replace a technical construct with a vague everyday synonym or use a thesaurus to manufacture formality. Retain functional nominalizations; expand a noun chain only when it obscures the relationship. Do not make “significant,” “robust,” “framework,” or any other legitimate technical term a prohibited word.
 
 Check repeated rhetorical contrasts, escalating triples and stage-setting transitions in context. Keep a contrast that distinguishes hypotheses, estimands or evidence. Keep a three-part list with three genuinely distinct required components. Remove balanced phrasing that supplies drama without information. Keep logical connectors where the relation would otherwise be unclear; delete a connector that merely announces another paragraph.
 
-Use sentence length and punctuation to express the argument, not to hit a rhythm quota. Combine short sentences that become choppy; split a long sentence at a change in actor, inferential status or operation. Read adjacent sentences for natural continuity. Em dashes, semicolons, passive voice, hedges and contractions are genre choices, not authorship tests. Do not replace every dash with a period or generate artificial errors.
+Use sentence length and punctuation to express the argument, not to hit a rhythm quota. Retain subordinate clauses that encode conditions, contrasts or scope, and passive constructions when the object or procedure is the useful focus. Combine choppy short sentences; split a long sentence when relationships become hard to follow. Formal academic body text defaults to full forms and avoids casual asides, conversational fillers and unnecessary direct reader address. Quotes retain their wording. Professional outreach can be less impersonal when requested. Em dashes, semicolons, passive voice and hedges are not authorship tests.
+
+### Preserve modality while applying the would/will preference
+
+When `avoid_would_will: true`, omit the modal uses of `would` and `will` from newly authored formal academic body text, including `wouldn't`, `won't`, `'ll`, and `'d` when it means `would`. Inspect straight and curly apostrophes. Preserve proper names, exact quotations, titles, reference entries, and nonmodal uses such as “political will”; resolve ambiguous matches by reading the sentence. Do not rewrite quoted evidence to satisfy this preference. The rule does not apply to internal instructions, editorial notes or before/bad examples; do not mistake skill documentation for submission prose.
+
+Reconstruct the sentence according to its function:
+
+- For a proposed aim or method, use an accurate purpose or design construction, such as “The proposed analysis is designed to estimate…” or “The protocol specifies…”, only when that aim or protocol is supported. Do not repeat one replacement scaffold throughout the text.
+- For a conditional plan, retain the condition and dependence: “The proposed use of linked data is contingent on access approval.” Do not imply that data have been obtained or the study completed.
+- For hypothetical effects or predictions, preserve the original degree of commitment, causal assumptions and counterfactual status through an explicit hypothesis, expectation or conditional formulation. Do not routinely substitute `may`, `could`, `can`, or simple present; these can change meaning.
+- For completed work, use the tense supported by the evidence. For ongoing uncertainty, retain meaningful hedging. Do not expand this preference into a ban on all modal verbs.
+
+Review every remaining candidate in context. Record protected quotations/titles and other genuine exceptions. If an accurate compliant rewrite is not possible, flag the conflict rather than silently strengthen or weaken the claim. Explain this as a user/project preference, not an academic grammar rule.
 
 ## 5. Prevent methods from overwhelming the reader
 
-Explain the measure in ordinary language before naming it. State its population and denominator close by. Separate (a) the main measure, (b) how it will be displayed/compared, and (c) quality checks when one paragraph currently does all three. Give an acronym once; repeat it only where useful. Keep actual measurement and inferential limits near the affected claim, rather than in repeated defensive disclaimers.
+Calibrate explanation to the intended reader. For a specialist audience, use familiar technical terms directly and define study-specific measures precisely; add a plain explanation only when it resolves a genuine ambiguity. State the population and denominator close to the definition. Separate the main measure, display/comparison and quality checks when their combination impairs comprehension. Give an acronym once; repeat it only where useful. Keep actual measurement and inferential limits near the affected claim, rather than in repeated defensive disclaimers.
 
 Do not silently discard denominator, temporal window, weights, missing-data treatment, product exclusions, recoding safeguards or stop conditions. For a short outreach document, propose moving detail to an explicit technical note only if the task permits it. Identify the move and count the complete deliverable. For equal-scope A/B tests, retain all material decisions in both drafts. A shorter draft achieved by losing its research design has failed.
 
@@ -54,4 +69,4 @@ Prefer stable source URLs to search-result URLs. Remove nonessential marketing p
 
 ## 8. Compare and stop
 
-Check the final draft against the meaning ledger. Then review it without the ledger as a reader: is the question apparent, does each paragraph lead somewhere, can the method be explained after one read, and is the ending a concrete next step? Use the separate fidelity and readability review. Show at least three representative changes when a substantial rewrite was requested, and one justified retained pattern where relevant. Counts are supporting observations, never the optimization target. Preserve the original and any material reviewer disagreement.
+Check the final draft against the meaning ledger. Then assess reader experience and register separately: is the question apparent, is the reasoning developed, can the target reader follow the method, and does the ending serve the genre? Check academic diction, first-person function, conditional meaning, lexical preferences and register consistency. Formality cannot excuse obscurity, loss of information or repetitive impersonal phrasing. Show at least three representative changes for a substantial rewrite and one justified retained pattern where relevant. Word/pronoun counts are observations, not quality targets; check an explicit lexical restriction contextually. Preserve the original and material reviewer disagreements.

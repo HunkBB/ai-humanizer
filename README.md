@@ -1,17 +1,20 @@
-# Academic Writing Humanizer · v2
+# Academic Writing Humanizer · v2.1
 
-面向 research proposal、research statement 和导师联系材料的写作与编辑 skill，可供 Claude Code、Codex 等支持本地技能文件的 agent 使用。
+面向 research proposal、policy paper、research statement 和导师联系材料的写作与编辑 skill，可供 Claude Code、Codex 等支持本地技能文件的 agent 使用。
 
 A portable skill for drafting and editing academic prose with verified facts, clear reasoning, natural expression, and contextual style review. It preserves substantive meaning and distinguishes editorial judgments from actual detector results.
 
 ## 能做什么
 
 - **内容与逻辑**：核对背景、研究问题、数据方法、导师匹配和文献支持。
-- **结构与表达**：重写模板化段落，调整信息顺序、句式、措辞和阅读节奏。
+- **结构与表达**：调整有问题的段落、信息顺序、句式和措辞，保留已经清楚且适合体裁的文字。
+- **正式学术语体**：正式正文采用分析性、精确、克制的表达；套磁邮件单独采用专业、直接的交流语气。
 - **个人声音**：根据使用者提供的真实写作样本进行校准；没有样本时明确说明尚未校准。
-- **核验与记录**：分别检查研究含义和阅读流畅度，保存实际修改与待确认事项。
+- **核验与记录**：分别检查研究含义、阅读流畅度和语体，保存实际修改与待确认事项。
 
 v2 保留 A–I 九个模块，并增加 Wikipedia 主页面及 Style、Markup 扩展页的完整情境映射：101 个编号标题、82 个末级条目。父子标题重叠，不代表 101 种独立特征。历史观察、维基专属格式和无效判断不会被当作通用禁令。
+
+v2.1 增加语体与表达控制：按读者知识水平解释术语，保留有功能的复杂句和第一人称，补充正式写作与过度堆砌的对照示例。正式学术正文默认启用 `avoid_would_will: true`，包含相应缩写；这是项目风格偏好，不是学术写作的普遍禁令。改写必须保留计划、假设、条件和不确定性；原样引文、标题、参考文献、专名及 “political will” 等非情态用法受到保护。用户可在具体任务中明确覆盖此默认值，规则不自动扩展到所有情态动词。
 
 这个 skill 不保证避开 Turnitin 或其他检测器，也不会估计不存在的检测百分比。脚本输出是编辑候选提示，不是 AI 检测结果。
 
@@ -44,7 +47,8 @@ Claude Code 可用 `/academic-writing-humanizer`；Codex 可用 `$academic-writi
 ```text
 读取 academic-writing-humanizer/SKILL.md。
 按 A–I 全部模块及 Wikipedia 覆盖表审阅这篇 proposal。
-先锁定事实与研究方法，再重写模板化段落；分别验证含义保真与阅读流畅度。
+先锁定事实与研究方法，再重写模板化段落；分别验证含义保真、阅读流畅度与正式学术语体。
+正式正文遵循默认的 would/will 避免规则，保留条件和研究状态；引文保持原样。
 保留原稿，输出修订稿、代表性前后对照、来源记录及待我确认的问题。
 ```
 
@@ -59,7 +63,7 @@ Claude Code 可用 `/academic-writing-humanizer`；Codex 可用 `$academic-writi
 | `academic-writing-humanizer/assets/` | 输入与审阅模板 |
 | `academic-writing-humanizer/scripts/` | 本地检查及 HTML 差异工具 |
 | `academic-writing-humanizer/agents/openai.yaml` | 可选界面信息 |
-| `tests/` | 通用辅助脚本回归测试，不含个人稿件 |
+| `tests/` | 通用脚本回归测试及合成语体试写材料，不含个人稿件 |
 
 ## 本地工具与测试
 
@@ -74,7 +78,9 @@ python3 academic-writing-humanizer/scripts/style_audit.py draft.md --output styl
 python3 -m unittest discover -s tests -p 'test_*.py' -v
 ```
 
-22 项测试检查脚本行为、输入保护、引用/占位符识别及误报控制。它们不验证检测规避效果、个人声音匹配或研究设计本身。`style_audit.py` 只做局部候选扫描，不能代替完整的语义审阅。
+22 项自动化测试检查脚本行为、输入保护、引用/占位符识别及误报控制。它们不验证检测规避效果、个人声音匹配或研究设计本身。`style_audit.py` 只做局部候选扫描，不能代替完整的语义审阅。
+
+语体试写与审阅记录见 [v2.1 评估记录](tests/register_v21/REPORT.md)。这些是 AI agent 执行及审阅的定性案例，不等同于真人读者研究，也未在 Claude Code 中独立复测。
 
 ## 迭代与来源
 

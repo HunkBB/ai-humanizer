@@ -6,6 +6,9 @@
 - Coverage version and per-row dispositions (revise / keep with reason / not present / not applicable):
 - Meaning ledger and fidelity result:
 - Reader experience result, separate from factual correctness:
+- Register result: genre / tone / academic diction / paragraph development / functional first person:
+- Would/will preference: active scope / body matches and contextual decisions / protected exceptions / modality preserved:
+- Overediting check: effective passages retained; no ornate jargon or mechanical tense changes:
 - Representative before/after passages and deliberately retained patterns:
 - Scope/length changes or detail moved to an annex:
 - Voice calibration:

@@ -22,7 +22,8 @@ Use satisfactory / needs revision / unresolved / not applicable, each with evide
 | Data/design | Observable measures, justified design, explicit access/limits? |
 | Fit | Specific accurate connection, no invented relationship? |
 | Sources | Identity/support checked at the stated access level? |
-| Language | Clear flow and natural syntax, with every protected proposition intact? Use style-review.md to judge fidelity and readability separately. |
+| Language | Clear flow, precise diction and appropriate register, with every protected proposition intact? Use style-review.md to judge fidelity, readability and register separately. |
+| Preferences | Genre and explicit style choices applied without semantic drift? Would/will avoidance checked in context, with quotes protected and conditions preserved? |
 | Process | Actual AI/author roles and decisions recorded? |
 | Understanding | Author has answered questions? Otherwise untested. |
 
